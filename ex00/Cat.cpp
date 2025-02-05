@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 16:35:01 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/02 16:47:43 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/02 21:43:13 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Cat::~Cat(){
     std::cout << "A Cat has been destroyed" << std::endl;
 }
 
-Cat::Cat(Cat const & src){
+Cat::Cat(Cat const & src) : Animal(src){
     this->type = src.getType();
     std::cout << "A Cat has been created" << std::endl;
 }

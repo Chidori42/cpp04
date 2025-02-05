@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 16:34:55 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/02 18:06:04 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/02 21:43:01 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Dog::Dog(std::string type){
     this->type = type;
     std::cout << "A Dog has been created" << std::endl;
 }
-Dog::Dog(Dog const & src){
+Dog::Dog(Dog const & src) : Animal(src){
     this->type = src.getType();
     std::cout << "A Dog has been created" << std::endl;
 }
