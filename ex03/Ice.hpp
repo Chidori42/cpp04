@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 04:21:02 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 04:21:28 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/08 05:52:13 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@
 
 class Ice : public AMateria
 {
-public:
-    Ice();
-    Ice(const Ice &other);
-    Ice &operator=(const Ice &other);
-    ~Ice();
-
-    AMateria* clone() const;
-    void use(ICharacter& target);
+    public:
+        Ice();
+        Ice(const Ice &other);
+        Ice &operator=(const Ice &other);
+        ~Ice();
+    
+        AMateria* clone() const;
+        void use(ICharacter& target);
 };
 
 #endif

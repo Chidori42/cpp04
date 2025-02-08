@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 02:52:21 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 02:52:32 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/08 06:01:06 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ private:
 
 public:
     MateriaSource();
+    MateriaSource(std::string name);
     MateriaSource(const MateriaSource &other);
     MateriaSource &operator=(const MateriaSource &other);
     ~MateriaSource();

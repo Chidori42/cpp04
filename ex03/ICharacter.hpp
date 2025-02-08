@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 21:24:33 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 02:23:37 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/08 05:55:28 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@
 class ICharacter
 {
     public:
-        virtual ~ICharacter() {}
+        ICharacter();
+        virtual ~ICharacter();
+        ICharacter(const ICharacter &other);
+        virtual ICharacter &operator=(const ICharacter &other);
         virtual std::string const & getName() const = 0;
         virtual void equip(AMateria* m) = 0;
         virtual void unequip(int idx) = 0;
