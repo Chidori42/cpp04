@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:55:30 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 05:58:23 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/09 03:39:48 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ std::string const &ICharacter::getName() const{
 
 }
 void ICharacter::equip(AMateria* m){
-
+    for (int i = 0; i < 4; i++)
 }
 void ICharacter::unequip(int idx){
 

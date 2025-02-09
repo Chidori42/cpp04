@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:47:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/09 02:19:57 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/09 03:42:02 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,14 @@ std::string const &Character::getName() const{
     return (this->name);
 }
 void Character::equip(AMateria* m){
-    
+    for (int i = 0; i < 4; i++)
+        inventory[i] = m;
 }
 
 void Character::unequip(int idx){
-
+    if (idx >= 0 && idx < 4)
+        inventory[idx] = NULL;
 }
 void Character::use(int idx, ICharacter& target){
-    
+    this->inventory[idx]->use(target);
 }
