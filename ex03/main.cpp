@@ -6,11 +6,15 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 02:52:44 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 02:53:43 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/09 02:23:31 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
+#include "Character.hpp"
+#include "Cure.hpp"
+#include "Ice.hpp"
+#include "MateriaSource.hpp"
 
 int main()
 {

@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:51:48 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 21:45:53 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/09 02:09:16 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ Ice &Ice::operator=(const Ice &other){
 }
 
 AMateria* Ice::clone() const{
-
+    return (new Ice());
 }
 
 void Ice::use(ICharacter& target){
-
+    std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;   
 }

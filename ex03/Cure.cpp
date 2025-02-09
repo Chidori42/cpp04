@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:50:10 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 21:32:34 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/09 02:07:41 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ Cure &Cure::operator=(const Cure &other){
 }
 
 AMateria* Cure::clone() const{
-
+    return (new Cure());
 }
 
 void Cure::use(ICharacter& target){
-
+    std::cout << "* heals " << target.getName() << "'s wounds *" << std::endl;
 }

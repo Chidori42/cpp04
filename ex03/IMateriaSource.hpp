@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 21:27:05 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 05:58:36 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/09 02:26:35 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #define IMATERIASOURCE_HPP
 
 #include "AMateria.hpp"
+#include "Ice.hpp"
+#include "Cure.hpp"
 
 class IMateriaSource
 {
