@@ -6,21 +6,21 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:47:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/09 03:42:02 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/10 18:59:11 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
 
 Character::Character(std::string const & name): name(name){
-    std::cout << "Character Parametrize Consructor Called" << std::endl;
+    // std::cout << "Character Parametrize Consructor Called" << std::endl;
 }
 
 Character::~Character(){
-    std::cout << "Character Destructor Called" << std::endl;
+    // std::cout << "Character Destructor Called" << std::endl;
 }
 
-Character::Character(const Character &other){
+Character::Character(const Character &other) : ICharacter(other){
     *this = other;
 }
 Character &Character::operator=(const Character &other){

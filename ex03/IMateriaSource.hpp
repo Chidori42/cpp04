@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 21:27:05 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/09 02:26:35 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/10 18:56:33 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class IMateriaSource
 {
     public:
-        virtual ~IMateriaSource();
+        virtual ~IMateriaSource(){};
         virtual void learnMateria(AMateria*) = 0;
         virtual AMateria* createMateria(std::string const & type) = 0;
 };
