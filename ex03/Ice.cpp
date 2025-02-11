@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:51:48 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/09 02:09:16 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:34:26 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 Ice::Ice(){
     this->type = "ice";
-    std::cout << "Ice Constructor Called" << std::endl;
+    // std::cout << "Ice Constructor Called" << std::endl;
 }
 
 Ice::~Ice(){
-    std::cout << "Ice Destructor Called" << std::endl;
+    // std::cout << "Ice Destructor Called" << std::endl;
 }
 
 Ice::Ice(const Ice &other){

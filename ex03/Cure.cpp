@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:50:10 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/09 02:07:41 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:34:33 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 
 Cure::Cure(){
     this->type = "cure";
-    std::cout << "Cure Constructor Called" << std::endl;
+    // std::cout << "Cure Constructor Called" << std::endl;
 }
 
 Cure::~Cure(){
-    std::cout << "Cure Destructor Called" << std::endl;
+    // std::cout << "Cure Destructor Called" << std::endl;
 }
 
 Cure::Cure(const Cure &other){
@@ -29,7 +29,7 @@ Cure::Cure(const Cure &other){
 Cure &Cure::operator=(const Cure &other){
     if (this != &other)
        this->type = other.type;
-    return (*this); 
+    return (*this);
 }
 
 AMateria* Cure::clone() const{
