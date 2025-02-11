@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:51:48 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:34:26 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:43:54 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Ice::~Ice(){
     // std::cout << "Ice Destructor Called" << std::endl;
 }
 
-Ice::Ice(const Ice &other){
+Ice::Ice(const Ice &other) : AMateria(other){
     this->type = other.type;
 }
 

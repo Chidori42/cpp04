@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 21:16:47 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:16:49 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:44:06 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <iostream>
 #include "ICharacter.hpp"
-
+class ICharacter;
 class AMateria{
     protected:
         std::string type;

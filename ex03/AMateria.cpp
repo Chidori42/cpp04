@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:41:41 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:17:06 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:44:12 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ AMateria::~AMateria(){
 AMateria::AMateria(std::string const & type): type(type){
     // std::cout << "AMateria Parametraze Constructor Called" << std::endl;
 }
+
 AMateria &AMateria::operator=(std::string const & type){
     if (this->type != type)
         this->type = type;

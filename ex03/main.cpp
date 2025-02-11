@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 02:52:44 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:42:20 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:43:27 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int main()
     ICharacter* bob = new Character("bob");
     me->use(0, *bob);
     me->use(1, *bob);
-
     delete bob;
     delete me;
     delete src;

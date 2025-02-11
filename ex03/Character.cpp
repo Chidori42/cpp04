@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:47:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:40:24 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:44:04 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Character::~Character()
     // std::cout << "Character Destructor Called" << std::endl;
 }
 
-Character::Character(const Character &other){
+Character::Character(const Character &other) : ICharacter(other){
     *this = other;
 }
 Character &Character::operator=(const Character &other)

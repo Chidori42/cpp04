@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:58:47 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:38:55 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:43:40 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,14 @@ MateriaSource &MateriaSource::operator=(const MateriaSource &other)
     if (this != &other)
     {
         for (int i = 0; i < 4; i++)
-            this->materiaSlots[i] = other.materiaSlots[i];
+            delete this->materiaSlots[i];
+
+        for (int i = 0; i < 4; i++) {
+            if (other.materiaSlots[i])  
+                this->materiaSlots[i] = other.materiaSlots[i]->clone(); 
+            else
+                this->materiaSlots[i] = NULL;
+        }
     }
     return (*this);
 }

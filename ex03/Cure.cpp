@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:50:10 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:34:33 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:43:56 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Cure::~Cure(){
     // std::cout << "Cure Destructor Called" << std::endl;
 }
 
-Cure::Cure(const Cure &other){
+Cure::Cure(const Cure &other) : AMateria(other){
     this->type = other.type;
 }
 

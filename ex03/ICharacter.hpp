@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 21:24:33 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 10:51:38 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/11 12:43:47 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ class ICharacter
     virtual void unequip(int idx) = 0;
     virtual void use(int idx, ICharacter& target) = 0;
 };
+
 
 #endif
