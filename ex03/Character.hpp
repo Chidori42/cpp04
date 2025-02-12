@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 02:50:35 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/08 02:51:43 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/12 12:50:08 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ class Character : public ICharacter
 private:
     std::string name;
     AMateria* inventory[4];
+    AMateria* tmp_inventory[4];
+    int tmp_index;
 
 public:
     Character(std::string const & name);

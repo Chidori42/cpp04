@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:47:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/11 12:44:04 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/12 12:48:49 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,37 @@
 Character::Character(std::string const & name): name(name)
 {
     for (int i = 0; i < 4; i++)
-        inventory[i] = NULL;
+        this->inventory[i] = NULL;
+    this->tmp_index = 0;
     // std::cout << "Character Parametrize Consructor Called" << std::endl;
 }
 
 Character::~Character()
 {
     for (int i = 0; i < 4; i++)
-        delete inventory[i];
+        delete this->inventory[i];
     // std::cout << "Character Destructor Called" << std::endl;
 }
 
 Character::Character(const Character &other) : ICharacter(other){
-    *this = other;
+   for (int i = 0; i < 4; i++)
+    {
+        this->inventory[i] = other.inventory[i]->clone();
+        delete inventory[i];
+    }
+    this->name = other.name;
 }
 Character &Character::operator=(const Character &other)
 {
     if (this != &other)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            this->inventory[i] = other.inventory[i]->clone();
+            delete inventory[i];
+        }
         this->name = other.name;
+    }
     return (*this);
 }
 
@@ -43,21 +56,25 @@ std::string const &Character::getName() const
 void Character::equip(AMateria* m)
 {
     for (int i = 0; i < 4; i++){
-        delete inventory[i];
-        inventory[i] = m->clone();
+        if (!this->inventory[i])
+        {
+            this->inventory[i] = m->clone();
+            return ;
+        }
     }
 }
 
 void Character::unequip(int idx)
 {
-    if (idx >= 0 && idx < 4)
+    if (idx >= 0 && idx < 4 && this->inventory[idx])
     {
-        inventory[idx] = NULL;
+        this->tmp_inventory[this->tmp_index++] = this->inventory[idx];
+        this->inventory[idx] = NULL;
     }
 }
 void Character::use(int idx, ICharacter& target)
 {
-    if (idx < 0 || idx >= 4 || !inventory[idx])
+    if (idx < 0 || idx >= 4 || !this->inventory[idx])
         return;
     this->inventory[idx]->use(target);
 }
