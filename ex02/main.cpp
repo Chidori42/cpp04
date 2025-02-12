@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 17:46:34 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/05 17:33:44 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/12 18:24:52 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,9 @@
 
 int main()
 {
-    // Animal a;
     const Animal* j = new Dog();
     const Animal* i = new Cat();
-    delete j;//should not create a leak
+    delete j;
     delete i;
     return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:58:47 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/12 12:08:49 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/12 16:28:10 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ void MateriaSource::learnMateria(AMateria* m)
     {
         if (!materiaSlots[i])
         {
-            std::cout << "Materia already learned" << "in index = " << i << std::endl;
             materiaSlots[i] = m;
             return;
         }

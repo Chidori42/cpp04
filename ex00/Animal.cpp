@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 16:35:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/02 18:06:54 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/12 18:10:52 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Animal::Animal(Animal const & src){
 Animal &Animal::operator=(Animal const & src){
     if (this != &src)
     {
-        this->type = src.getType();
+        this->setType(src.getType());
     }
     return *this;
 }

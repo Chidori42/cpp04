@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 15:13:52 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/02 18:05:41 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/12 18:22:11 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Animal{
     public:
         Animal();
         Animal(std::string type);
-        ~Animal();
+        virtual ~Animal();
 
         Animal(Animal const & src);
         Animal &operator=(Animal const & src);
