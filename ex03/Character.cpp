@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:47:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/13 17:03:12 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/13 22:48:10 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@
 Character::Character(std::string const & name): name(name)
 {
     for (int i = 0; i < 4; i++)
+    {
         this->inventory[i] = NULL;
+        this->tmp_inventory[i] = NULL;
+    }
     this->tmp_index = 0;
     // std::cout << "Character Parametrize Consructor Called" << std::endl;
 }
@@ -23,7 +26,10 @@ Character::Character(std::string const & name): name(name)
 Character::~Character()
 {
     for (int i = 0; i < 4; i++)
+    {
         delete this->inventory[i];
+        delete this->tmp_inventory[i];
+    }
     // std::cout << "Character Destructor Called" << std::endl;
 }
 
