@@ -8,7 +8,7 @@ SRCS =	main.cpp\
 		Brain.cpp
 		
 
-NAME = Brain
+NAME = Deep_and_shallow
 
 OBJECTS = $(SRCS:.cpp=.o)
 
