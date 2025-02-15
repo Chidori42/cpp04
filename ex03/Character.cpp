@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 05:47:07 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/13 22:48:10 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/15 15:58:11 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ void Character::equip(AMateria* m)
         if (!this->inventory[i])
         {
             this->inventory[i] = m->clone();
+            delete m;
             return ;
         }
     }

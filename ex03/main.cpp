@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 02:52:44 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/02/15 15:25:34 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/02/15 16:01:18 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,8 @@ int main()
     AMateria* tmp;
     tmp = src->createMateria("ice");
     me->equip(tmp);
-    delete tmp;
     tmp = src->createMateria("cure");
     me->equip(tmp);
-    delete tmp;
     ICharacter* bob = new Character("bob");
     me->use(0, *bob);
     me->use(1, *bob);
